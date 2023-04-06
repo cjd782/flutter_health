@@ -1,5 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_health">
+   
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.health.READ_STEPS"/>
+    <queries>
+        <package android:name="com.google.android.apps.healthdata" />
+    </queries>
+
    <application
         android:label="flutter_health"
         android:name="${applicationName}"
